@@ -21,7 +21,7 @@ public class ContractController {
         VelocityContext context = new VelocityContext();
         context.put("name", "张三");
         context.put("code", "5200214422");
-        String template = "vm/test.xml";
+        String template = "src/main/resources/vm/test.xml";
 
         StringWriter sw = new StringWriter();
         Template tpl = Velocity.getTemplate(template, "UTF-8");
